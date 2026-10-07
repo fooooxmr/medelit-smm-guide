@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMM в «Медэлит»: гайд к собеседованию</title>
+  <meta name="description" content="Подготовка к собеседованию на SMM-специалиста медицинского центра «Медэлит» (Гродно): клиника, конкуренты, закон о рекламе медуслуг, контент, вопросы и ответы.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0e7c86">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e7c86'/%3E%3Cpath d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='white'/%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menu-btn" aria-label="Открыть содержание" aria-controls="sidebar" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <a class="topbar-title" href="#top">Гайд: SMM в «Медэлит»</a>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="print-btn" aria-label="Распечатать или сохранить в PDF" title="Печать / PDF">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2M6 14h12v7H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn" id="theme-btn" aria-label="Переключить тему" title="Светлая / тёмная тема">
+        <svg class="sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Содержание">
+    <div class="sidebar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span><strong>Медэлит · SMM</strong><small>собеседование 8 октября 2026</small></span>
+      </a>
+
+      <div class="search">
+        <input id="search" type="search" placeholder="Поиск по гайду" autocomplete="off" aria-label="Поиск по гайду">
+        <div class="search-results" id="search-results" hidden></div>
+      </div>
+
+      <nav class="toc" id="toc">
+        <p class="toc-group">Сначала</p>
+        <a href="#glavnoe">Главное за 2 минуты</a>
+        <a href="#plan">План на вечер и утро</a>
+        <p class="toc-group">Компания</p>
+        <a href="#medelit">«Медэлит»: факты</a>
+        <a href="#vakansiya">Вакансия и ожидания</a>
+        <a href="#konkurenty">Конкуренты в Гродно</a>
+        <p class="toc-group">Правила</p>
+        <a href="#zakon">Закон о рекламе медуслуг</a>
+        <a href="#dannye">Врачебная тайна и данные</a>
+        <p class="toc-group">Работа</p>
+        <a href="#ploshchadki">Площадки и аудитория</a>
+        <a href="#kontent">Контент для «Медэлит»</a>
+        <a href="#algoritmy">Алгоритмы и метрики</a>
+        <p class="toc-group">Собеседование</p>
+        <a href="#voprosy">Вопросы и ответы</a>
+        <a href="#sprosit">Что спросить у компании</a>
+        <a href="#testovoe">Тестовое задание</a>
+        <p class="toc-group">Справка</p>
+        <a href="#ne-provereno">Что не удалось проверить</a>
+        <a href="#istochniki">Все источники</a>
+      </nav>
+
+      <div class="sidebar-progress">
+        <span>Чек-лист подготовки</span>
+        <strong id="checklist-total">0 из 0</strong>
+        <div class="meter"><span id="checklist-meter"></span></div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content" id="content">
+
+    <section class="hero" id="top">
+      <p class="eyebrow">Гродно · медицинский центр · SMM-специалист</p>
+      <h1>Гайд к собеседованию в&nbsp;«Медэлит»</h1>
+      <p class="lead">Всё, что нужно знать к завтрашнему разговору: что за клиника, чего ждут от SMM-специалиста, что запрещает закон о рекламе медуслуг, какой контент предложить и что ответить на типичные вопросы.</p>
+      <div class="hero-meta">
+        <span class="chip">Собрано 7 октября 2026</span>
+        <span class="chip">Ссылки проверены в тот же день</span>
+        <span class="chip">Законы — в действующих редакциях</span>
+      </div>
+      <p class="hint">Если времени мало, прочитай «Главное», «Закон о рекламе медуслуг» и «Контент для „Медэлит“». Остальное — по мере сил.</p>
+    </section>
+
+    <!-- ============ ГЛАВНОЕ ============ -->
+    <section id="glavnoe" class="section">
+      <h2>Главное за 2 минуты</h2>
+      <div class="cards">
+        <article class="card accent">
+          <h3>Роль — делать контент своими руками</h3>
+          <p>Вакансия от 6 октября: от 1300 BYN, опыт не требуется. Значит, от тебя ждут съёмки на телефон, монтажа коротких видео, текстов и обложек, а не стратегии на год. Приходи с примером работы.</p>
+        </article>
+        <article class="card">
+          <h3>Главный козырь — закон</h3>
+          <p>Реклама медуслуг в Беларуси жёстко ограничена: без гарантий, сравнений, благодарностей за излечение и запугивания, с пометкой «рекламный характер». Плюс врачебная тайна в комментариях. Кандидаты без опыта этого обычно не знают.</p>
+        </article>
+        <article class="card">
+          <h3>Знай клинику</h3>
+          <p>Один центр в Гродно на ул. Большая Троицкая, 40А, с 2013 года. Взрослые и дети, 8 врачей УЗИ, анализы через «Инвитро». По будням открыты с 7:00, работают и в воскресенье.</p>
+        </article>
+        <article class="card">
+          <h3>Инфоповоды под их направления</h3>
+          <p>Октябрь — «Розовый октябрь» (маммология). 20 октября — день остеопороза (денситометрия). 29 октября — день инсульта (неврология, кардиология). 14 ноября — день диабета (эндокринология).</p>
+        </article>
+        <article class="card">
+          <h3>Точка роста — отзывы в Google</h3>
+          <p>По виджету на их сайте: Яндекс — 5,0 (343 отзыва), Google — 4,0 (105). Предложи регулярно и аккуратно отвечать на отзывы — подай это как идею, а не как упрёк.</p>
+        </article>
+        <article class="card">
+          <h3>Конкурент — на той же улице</h3>
+          <p>ЛОДЭ Гродно находится на Большой Троицкой, 51. Смотри их контент, но в рекламе «Медэлит» с ними никогда не сравнивай: закон запрещает.</p>
+        </article>
+      </div>
+      <div class="callout warn">
+        <strong>Не перепутай повод.</strong> 8 октября — Всемирный день зрения, но офтальмологии в «Медэлит» нет. Если спросят идею «на сейчас», предлагай «Розовый октябрь» или денситометрию к 20 октября.
+      </div>
+    </section>
+
+    <!-- ============ ПЛАН ============ -->
+    <section id="plan" class="section">
+      <h2>План на вечер и утро</h2>
+      <p>Отмечай пункты галочками — прогресс сохраняется в браузере.</p>
+
+      <h3>Вечер, 3–4 часа</h3>
+      <ul class="checklist" data-list="evening">
+        <li><label><input type="checkbox" data-id="ev-ig"><span><b>40 мин.</b> Пролистай <a href="https://www.instagram.com/medelit_grodno/" target="_blank" rel="noopener">Instagram @medelit_grodno</a>: последние 15–20 постов, Reels, «Актуальное». Выпиши частоту, форматы, что набирает больше просмотров, есть ли врачи в кадре, ставят ли пометку «рекламный характер», как отвечают на комментарии. Подготовь 3 сильные стороны и 3 идеи роста.</span></label></li>
+        <li><label><input type="checkbox" data-id="ev-other"><span><b>15 мин.</b> Загляни в <a href="https://vk.com/medelitgrodno" target="_blank" rel="noopener">VK</a> и на <a href="https://www.youtube.com/channel/UCsQl8iFSGzH4QWZoYEbnmRg" target="_blank" rel="noopener">YouTube</a>: живые ли они, когда был последний пост. Поищи в TikTok «медэлит» и «medelit».</span></label></li>
+        <li><label><input type="checkbox" data-id="ev-law"><span><b>60 мин.</b> Раздел <a href="#zakon">«Закон о рекламе»</a>. Перепиши вслух примеры «нельзя → можно».</span></label></li>
+        <li><label><input type="checkbox" data-id="ev-comp"><span><b>30 мин.</b> Instagram конкурентов из раздела <a href="#konkurenty">«Конкуренты»</a>: какие рубрики, что работает.</span></label></li>
+        <li><label><input type="checkbox" data-id="ev-sample"><span><b>45 мин.</b> Сделай один пример под «Медэлит»: карусель в Canva или короткий Reels в CapCut без пациентов в кадре. Темы — в разделе <a href="#kontent">«Контент»</a>.</span></label></li>
+        <li><label><input type="checkbox" data-id="ev-answers"><span><b>30 мин.</b> Ответы на <a href="#voprosy">вопросы</a>: по 3–4 предложения на каждый, лучше вслух.</span></label></li>
+        <li><label><input type="checkbox" data-id="ev-ask"><span><b>10 мин.</b> Выбери 4–5 <a href="#sprosit">вопросов к компании</a>.</span></label></li>
+      </ul>
+
+      <h3>Утро, 30 минут</h3>
+      <ul class="checklist" data-list="morning">
+        <li><label><input type="checkbox" data-id="mo-fresh"><span>Посмотри, что «Медэлит» опубликовал за последние сутки — можно упомянуть на встрече.</span></label></li>
+        <li><label><input type="checkbox" data-id="mo-law"><span>Пробеги ещё раз раздел о законе — блок «Чего нельзя».</span></label></li>
+        <li><label><input type="checkbox" data-id="mo-phone"><span>Открой портфолио и свой пример на телефоне, заряди телефон.</span></label></li>
+        <li><label><input type="checkbox" data-id="mo-addr"><span>Уточни адрес встречи (центр — ул. Большая Троицкая, 40А) и приходи за 10 минут.</span></label></li>
+      </ul>
+    </section>
+
+    <!-- ============ МЕДЭЛИТ ============ -->
+    <section id="medelit" class="section">
+      <h2>«Медэлит»: факты</h2>
+      <p class="source-line">Источник — сайт <a href="https://medelit.by/" target="_blank" rel="noopener">medelit.by</a> и страница <a href="https://medelit.by/o-nas" target="_blank" rel="noopener">«О нас»</a>.</p>
+
+      <div class="facts">
+        <div class="fact"><span>Юрлицо</span><b>ООО «Медэлит», с 2013 года</b></div>
+        <div class="fact"><span>Адрес</span><b>Гродно, ул. Большая Троицкая, 40А</b></div>
+        <div class="fact"><span>Часы</span><b>Пн–Пт 7–21, Сб 8–18, Вс 8–16</b></div>
+        <div class="fact"><span>Телефоны</span><b>+375 29 566 80 80 (МТС), +375 29 196 60 80 (А1), 8 0152 60 80 00</b></div>
+        <div class="fact"><span>Запись</span><b>только по предварительной записи</b></div>
+        <div class="fact"><span>Слоган сайта</span><b>«качество по доступной цене»</b></div>
+      </div>
+
+      <h3>Цифры с главной страницы</h3>
+      <p>60 врачей первой и высшей категории, 100 000 пациентов, 92,9% рекомендуют центр. Миссия — качественная помощь «без лишних затрат времени и средств». Эти формулировки — их tone of voice: практичность, экономия времени, доступность.</p>
+
+      <h3>Направления</h3>
+      <div class="two-col">
+        <div>
+          <h4>Взрослым</h4>
+          <p class="tags"><span>аллергология</span><span>гастроэнтерология</span><span>гинекология</span><span>дерматология</span><span>кардиология</span><span>неврология</span><span>онкология и маммология</span><span>ЛОР</span><span>ревматология</span><span>терапия</span><span>урология</span><span>хирургия</span><span>эндокринология</span><span>УЗИ</span><span>функциональная диагностика</span><span>денситометрия</span><span>удаление новообразований</span></p>
+        </div>
+        <div>
+          <h4>Детям</h4>
+          <p class="tags"><span>аллергология</span><span>дерматология</span><span>кардиология</span><span>эндокринология</span><span>ЛОР</span><span>УЗИ</span><span>функциональная диагностика</span><span>анализы</span></p>
+          <h4>Ещё на сайте</h4>
+          <p class="tags"><span>анализы — партнёр «Инвитро»</span><span>программы</span><span>акции</span><span>страхование</span><span>новости</span></p>
+        </div>
+      </div>
+      <p>В блоке «популярное» на сайте: акции, УЗИ, гинекология, кардиология, эндокринология. Это то, что клиника сама считает главным.</p>
+
+      <h3>Врачи — будущие герои контента</h3>
+      <ul>
+        <li>На сайте 18 врачей, из них 8 — врачи УЗИ. УЗИ — явная сильная сторона.</li>
+        <li>4 акушера-гинеколога и гинеколога-эндокринолога, среди них кандидат медицинских наук Смолей.</li>
+        <li>Аллерголог Бедин — кандидат медицинских наук, высшая категория.</li>
+        <li>Неврологи (у Филиной стаж с 1979 года), дерматовенеролог, уролог, онколог-хирург и маммолог.</li>
+      </ul>
+      <p class="muted">Кандидатов наук и врачей с большим стажем удобно делать экспертами рубрики «Врач отвечает». Показывать врачей в рекламе своей медицинской деятельности клиника может, но с их согласия (ст. 10 закона о рекламе).</p>
+
+      <h3>Текущая акция</h3>
+      <div class="callout">
+        <a href="https://medelit.by/promotions/skidka-50-na-udalenie-novoobrazovanij-v-medelit" target="_blank" rel="noopener">Скидка 50% на удаление новообразований</a>: 6,50 руб. вместо 13,00 руб. за один элемент до 0,5 см (цена указана за удаление папиллом), консультация специалиста оплачивается отдельно. Как оформить такую акцию для соцсетей — в разделе <a href="#akciya-post">«Пост об акции»</a>.
+      </div>
+
+      <h3>Отзывы</h3>
+      <p>По виджету на главной странице сайта:</p>
+      <ul class="ratings">
+        <li><a href="https://yandex.by/maps/-/CHHcECOq" target="_blank" rel="noopener">Яндекс Карты</a> <b>5,0</b> <span>343 отзыва</span></li>
+        <li><span class="r-name">Google</span> <b class="low">4,0</b> <span>105 отзывов</span></li>
+        <li><a href="https://medelit.103.by/otzyvy/" target="_blank" rel="noopener">103.by</a> <b>4,8</b> <span>56 отзывов</span></li>
+        <li><a href="https://medelit.relax.by/" target="_blank" rel="noopener">relax.by</a> <b>5,0</b> <span>2 отзыва</span></li>
+      </ul>
+
+      <h3>Каналы</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/medelit_grodno/" target="_blank" rel="noopener">Instagram @medelit_grodno</a> — основной.</li>
+        <li><a href="https://vk.com/medelitgrodno" target="_blank" rel="noopener">ВКонтакте</a> и <a href="https://www.youtube.com/channel/UCsQl8iFSGzH4QWZoYEbnmRg" target="_blank" rel="noopener">YouTube</a>.</li>
+        <li>Viber для связи: +375 29 196 60 80.</li>
+        <li>TikTok и Telegram-канал найти не удалось.</li>
+      </ul>
+      <div class="callout info">
+        На сайте стоят пиксель Meta, Google Analytics и Яндекс Метрика. Значит, реклама в Instagram может запускаться или уже запускалась. Хороший вопрос на встрече: «Запускаете ли таргет и кто им занимается?»
+      </div>
+      <p class="muted">Сейчас клиника параллельно ищет специалиста колл-центра, администратора и медсестру (по <a href="https://dreamjob.ru/employers/457240/vakansii" target="_blank" rel="noopener">Dream Job</a> и <a href="https://by.joblum.com/company/medelit" target="_blank" rel="noopener">Joblum</a>) — похоже, команда растёт.</p>
+    </section>
+
+    <!-- ============ ВАКАНСИЯ ============ -->
+    <section id="vakansiya" class="section">
+      <h2>Вакансия и ожидания</h2>
+      <div class="callout accent">
+        <p><b>SMM-специалист, Гродно, от 1300 BYN, без опыта</b> — опубликована 6 октября 2026 (видна через агрегатор <a href="https://dreamjob.ru/employers/457240/vakansii" target="_blank" rel="noopener">Dream Job</a>, который берёт вакансии с rabota.by). В мае 2026 эта же позиция была от 700 BYN.</p>
+        <p>Обязанности из вакансии: ведение аккаунта в соцсетях; создание контента — тексты, визуал (фото, видео, инфографика); короткие видео; отслеживание трендов.</p>
+      </div>
+
+      <h3>Что это значит</h3>
+      <ul>
+        <li>Тебя будут оценивать по умению <b>делать</b>: снять, смонтировать, написать, оформить. Стратегию тоже стоит уметь объяснить, но вторым планом.</li>
+        <li>Самое ценное, что можно добавить сверх требований, — знание закона о рекламе медуслуг и умение работать с врачами.</li>
+        <li>В вакансии «аккаунт» в единственном числе — уточни, какие площадки входят в работу.</li>
+      </ul>
+
+      <h3>Покажи навыки</h3>
+      <ul>
+        <li><b>Съёмка на телефон:</b> вертикаль 9:16, свет от окна, петличный микрофон, чистый фон без пациентов и документов в кадре.</li>
+        <li><b>CapCut:</b> нарезка, субтитры, обложка. Не публикуй в Instagram ролики с водяным знаком TikTok или CapCut — их хуже показывают.</li>
+        <li><b>Canva:</b> шаблоны каруселей и обложек в цветах сайта клиники.</li>
+        <li><b>Тексты:</b> простым языком, без медицинских обещаний. Помогает <a href="https://glvrd.ru/" target="_blank" rel="noopener">Главред</a>.</li>
+        <li><b>Meta Business Suite:</b> отложенный постинг и статистика.</li>
+      </ul>
+
+      <h3>Рынок Гродно для сравнения</h3>
+      <ul>
+        <li>«Моя клиника» (бывшая «Клиника женского здоровья») — <a href="https://grodno.rabota.by/vacancy/136584482" target="_blank" rel="noopener">SMM от 650 BYN</a>, нужен опыт 1–3 года, гибрид (август 2026).</li>
+        <li>КиберКод — <a href="https://grodno.rabota.by/vacancy/136312930" target="_blank" rel="noopener">контент-креатор</a>, 150 BYN за готовый ролик, 15–20 Reels в месяц.</li>
+      </ul>
+      <p>Вывод: 1300 BYN без опыта — выше рынка Гродно. Если спросят про ожидания, не называй сумму ниже указанной в вакансии.</p>
+    </section>
+
+    <!-- ============ КОНКУРЕНТЫ ============ -->
+    <section id="konkurenty" class="section">
+      <h2>Конкуренты в Гродно</h2>
+      <p class="source-line">Данные и рейтинги — с профилей на 103.by и сайтов клиник.</p>
+      <div class="cards">
+        <article class="card">
+          <h3><a href="https://lode-grodno-3.103.by/" target="_blank" rel="noopener">ЛОДЭ Гродно</a></h3>
+          <p class="meta">ул. Большая Троицкая, 51 — та же улица</p>
+          <p>Крупная сеть: МРТ, рентген, своя операционная, косметология. У сети на 103.by — 4,9 при 9416 отзывах.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://myclinic.by/" target="_blank" rel="noopener">«Моя клиника»</a></h3>
+          <p class="meta">ул. Будённого, 48</p>
+          <p>Новый бренд «Клиники женского здоровья»: сильная женская медицина плюс 20+ направлений, включая педиатрию. 4,8 при 137 отзывах.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://rosmed.103.by/" target="_blank" rel="noopener">«Росмед»</a></h3>
+          <p class="meta">ул. Свердлова, 16</p>
+          <p>УЗИ, функциональная диагностика, анализы — тоже через «Инвитро». 4,9 при 179 отзывах.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://doctorplus.103.by/rubric/uzi/" target="_blank" rel="noopener">«Доктор Плюс»</a></h3>
+          <p class="meta">ул. Индустриальная, 2а</p>
+          <p>Узкий профиль: УЗИ и урология. 5,0 при 53 отзывах.</p>
+        </article>
+      </div>
+      <div class="callout warn">
+        <strong>Как использовать.</strong> Смотри у конкурентов форматы и рубрики. Но отличия «Медэлит» показывай фактами — «по будням с 7:00», «взрослые и дети в одном центре», «8 врачей УЗИ», «анализы „Инвитро“» — а не словами «лучше» или «дешевле»: сравнение в рекламе медуслуг запрещено.
+      </div>
+    </section>
+
+    <!-- ============ ЗАКОН ============ -->
+    <section id="zakon" class="section">
+      <h2>Закон о рекламе медуслуг</h2>
+      <p>Первоисточник — <a href="https://etalonline.by/document/?regnum=h10700225" target="_blank" rel="noopener">Закон «О рекламе» № 225-З</a> на ЭТАЛОНЕ (редакция от 30.01.2026), отдельно — <a href="https://zakony-by.com/zakon_rb_o_reklame/15.htm" target="_blank" rel="noopener">статья 15</a>.</p>
+
+      <h3>Что считается рекламой (ст. 1)</h3>
+      <p>Любая информация, которая привлекает внимание к услуге и продвигает её. Пост про конкретную услугу с призывом записаться — реклама, даже в собственном аккаунте клиники.</p>
+
+      <h3>Согласование с Минздравом (ст. 15 п. 1)</h3>
+      <p>Реклама медуслуг без согласования Минздрава запрещена. Исключения, важные для SMM:</p>
+      <ul>
+        <li>реклама на собственном сайте клиники и в местах, где оказывают помощь;</li>
+        <li>реклама, в которой есть <b>только</b> название услуги, цена, адрес, контакты (телефоны, сайт), логотип и обязательная информация.</li>
+      </ul>
+      <div class="callout info">
+        Соцсети в исключениях прямо не названы. Значит, рекламный пост с описанием услуги, скорее всего, нужно согласовывать (<a href="http://rceth.by/Documents/regl2024.pdf" target="_blank" rel="noopener">регламент процедуры</a>), а пост в «минимальном» формате — нет. Официального разъяснения МАРТ на этот счёт найти не удалось — это трактовка по тексту закона. На встрече задай это вопросом: «Как у вас устроено согласование рекламы?»
+      </div>
+
+      <h3>Пометка (ст. 15 п. 4)</h3>
+      <p>Любая реклама медуслуг, кроме наружной и на транспорте, должна содержать указание, что информация носит рекламный характер. В соцсетях — тоже.</p>
+
+      <h3 id="nelzya">Чего нельзя (ст. 15 п. 7)</h3>
+      <ul class="cross">
+        <li>гарантировать результат;</li>
+        <li>сравнивать с другими методами или клиниками;</li>
+        <li>ссылаться на конкретные случаи излечения и благодарности — отзывы и «до/после» в рекламных постах попадают сюда;</li>
+        <li>обращаться к несовершеннолетним (детский контент — только для родителей);</li>
+        <li>создавать впечатление, что можно обойтись без врача;</li>
+        <li>внушать человеку, что у него есть заболевание, которое требует услуги;</li>
+        <li>ссылаться на результаты исследований и рекомендации госорганов.</li>
+      </ul>
+
+      <h3>Постановление Минздрава № 63</h3>
+      <p><a href="https://base3.spinform.ru/show_doc.fwx?rgn=97673" target="_blank" rel="noopener">Действующая редакция 2020 года</a>:</p>
+      <ul>
+        <li>понятный язык и предупреждение о противопоказаниях и побочных реакциях;</li>
+        <li>нельзя: натуралистичные изображения поражённых органов, повелительные призывы («срочно запишись!»), запугивание, обещание быстрого эффекта, «безопасно и без побочек»;</li>
+        <li>нельзя утверждать, что метод лучше аналогов.</li>
+      </ul>
+      <p class="muted">Запрет упоминать онкологию и диабет в редакции 2020 года на рекламу медуслуг не распространяется — то есть «Розовый октябрь» и день диабета брать можно. В старых копиях документа этого исключения нет, не путай.</p>
+
+      <h3>Общие правила (ст. 10)</h3>
+      <ul>
+        <li>язык рекламы — русский и/или белорусский; иностранный — только если текст идентичен русскому или белорусскому;</li>
+        <li>в рекламе продаж указываются наименование и УНП рекламодателя, в интернете можно дать ссылку на сайт с этими данными;</li>
+        <li>образы людей — только с их согласия; своих врачей клиника может показывать в рекламе своей медицинской деятельности.</li>
+      </ul>
+
+      <h3>Блогеры</h3>
+      <p>С 12 июля 2024 года чужую рекламу в интернете могут размещать только те, кто включён в <a href="https://www.mart.gov.by/news/novost/osnovnye-novshestva-v-sfere-reklamy-chto-nuzhno-znat-uchastnikam-rynka/" target="_blank" rel="noopener">реестр МАРТ</a>. Клинике для своих аккаунтов туда не нужно, а гродненскому блогеру, которому клиника платит, — нужно. Разъяснения — в канале <a href="https://t.me/advertising_by_MART" target="_blank" rel="noopener">@advertising_by_MART</a>.</p>
+
+      <h3>Тренировка: нельзя → можно</h3>
+      <div class="rewrite">
+        <div class="bad">«Боли в груди? Возможно, это рак! Срочно на УЗИ!»</div>
+        <div class="good">«Розовый октябрь. Маммолог „Медэлит“ отвечает на три частых вопроса об обследовании молочных желёз».</div>
+        <p class="why">Убрали запугивание, внушение болезни и повелительный призыв.</p>
+      </div>
+      <div class="rewrite">
+        <div class="bad">«Лучшее УЗИ в Гродно, 100% точность».</div>
+        <div class="good">«Как подготовиться к УЗИ брюшной полости — объясняет врач ультразвуковой диагностики».</div>
+        <p class="why">Убрали сравнение и гарантию, добавили пользу.</p>
+      </div>
+      <div class="rewrite">
+        <div class="bad">«Удалим папилломы быстро и без последствий!»</div>
+        <div class="good">«Удаление папиллом до 0,5 см — 6,50 руб. вместо 13,00 руб. за элемент. Адрес, телефон. Информация носит рекламный характер».</div>
+        <p class="why">«Быстро» и «без последствий» — обещание быстрого эффекта и безопасности. Минимальный формат — без лишних обещаний.</p>
+      </div>
+      <div class="rewrite">
+        <div class="bad">«У нас дешевле, чем в ЛОДЭ».</div>
+        <div class="good">«Консультация эндокринолога — X руб.»</div>
+        <p class="why">Цену называть можно, сравнивать с конкурентом — нет.</p>
+      </div>
+      <div class="rewrite">
+        <div class="bad">Рекламный пост с отзывом «Спасибо доктору, вылечил!»</div>
+        <div class="good">Пост о враче: образование, категория, с чем к нему приходят — с согласия врача.</div>
+        <p class="why">Благодарности за излечение в рекламе запрещены.</p>
+      </div>
+      <div class="rewrite">
+        <div class="bad">«Ребята, приходите к нашему ЛОР-врачу!»</div>
+        <div class="good">«Родителям: как проходит первый приём детского ЛОР-врача».</div>
+        <p class="why">К несовершеннолетним обращаться нельзя.</p>
+      </div>
+
+      <h3>Пациенты из Польши и Литвы</h3>
+      <p>Безвизовый въезд для граждан Польши, Литвы и Латвии продлён до 31 декабря 2026 года, срок пребывания до 90 суток (<a href="https://president.gov.by/ru/events/po-reseniu-prezidenta-bezvizovyj-rezim-v-ezda-v-stranu-dla-grazhdan-38-evropejskih-gosudarstv-prodlen-na-2026-god" target="_blank" rel="noopener">president.gov.by</a>, <a href="https://gpk.gov.by/peresechenie-granitsy/bezvizovyy-vezd-v-belarus-dlya-grazhdan-litvy-i-latvii/" target="_blank" rel="noopener">ГПК</a>). Гродненская университетская клиника <a href="https://www.gocb.by/en/patsientam/list-ozhidaniya-na-endoprotezirovanie/item/1480-meditsinskij-turizm.html" target="_blank" rel="noopener">уже работает</a> с иностранными пациентами. Работает ли с ними «Медэлит», неизвестно — спроси. Если да, помни: реклама на польском или литовском допустима только как точный дубль русского или белорусского текста.</p>
+    </section>
+
+    <!-- ============ ДАННЫЕ ============ -->
+    <section id="dannye" class="section">
+      <h2>Врачебная тайна и персональные данные</h2>
+      <ul>
+        <li>Сведения о здоровье — специальные персональные данные (<a href="https://etalonline.by/document/?regnum=H12100099" target="_blank" rel="noopener">Закон № 99-З, ст. 8</a>).</li>
+        <li>Врачебная тайна включает даже сам факт обращения за помощью (<a href="https://zakony-by.com/zakon_rb_o_zdravoohranenii/46.htm" target="_blank" rel="noopener">ст. 46 закона «О здравоохранении»</a>). В комментариях нельзя даже подтверждать, что человек был пациентом.</li>
+        <li>Реальный кейс: клиника в ответе на отзыв указала диагноз пациентки, Национальный центр защиты персональных данных признал это нарушением (<a href="https://myfin.by/article/zhizn/diagnoz-stal-publicnym-posle-otzyva-o-klinike-istoria-beloruski-41084" target="_blank" rel="noopener">Myfin, 2025</a>).</li>
+        <li>Разъяснение центра от апреля 2026 года: если при съёмке в медучреждении в кадр попадают люди, это обработка персональных данных и нужно правовое основание (<a href="https://etalonline.by/document/?regnum=u02601103" target="_blank" rel="noopener">ЭТАЛОН</a>).</li>
+        <li>Про согласие на фото — понятная <a href="https://ukon.by/2020/07/14/zakonno-li-ispolzovat-foto-pacienta-v-reklame/" target="_blank" rel="noopener">статья юриста</a>. Она 2020 года, номер статьи КоАП там устарел: сейчас ответственность — по ст. 13.9.</li>
+      </ul>
+
+      <h3>Правила работы</h3>
+      <ul class="check">
+        <li>На негатив отвечать быстро, вежливо, без медицинских подробностей и без подтверждения визита, переводить разговор на телефон или в личные сообщения.</li>
+        <li>Критику не удалять — только оскорбления и спам.</li>
+        <li>Пациенты в кадре — только с письменного согласия. Проще снимать без них: врачи, кабинеты, оборудование.</li>
+        <li>Следить, чтобы в кадр не попадали мониторы, карты, направления, расписание с фамилиями.</li>
+      </ul>
+
+      <h3>Шаблон ответа на негативный отзыв</h3>
+      <div class="template">
+        <p id="tpl-review">Здравствуйте! Спасибо, что написали. Нам жаль, что у вас сложилось такое впечатление. Чтобы разобраться, пожалуйста, позвоните администратору: +375 29 566 80 80 — или напишите нам в личные сообщения.</p>
+        <button class="copy-btn" data-copy="tpl-review">Скопировать</button>
+      </div>
+      <p class="muted">Ни слова о визите, враче, диагнозе или услуге — даже если автор сам всё перечислил.</p>
+    </section>
+
+    <!-- ============ ПЛОЩАДКИ ============ -->
+    <section id="ploshchadki" class="section">
+      <h2>Площадки и аудитория</h2>
+      <ul>
+        <li>По <a href="https://datareportal.com/reports/digital-2026-belarus" target="_blank" rel="noopener">DataReportal 2026</a> у Instagram в Беларуси 3,9 млн человек рекламного охвата, 63% взрослой аудитории — женщины. Для клиники это ключевая площадка: здоровьем семьи чаще занимаются женщины.</li>
+        <li>По <a href="https://officelife.by/news/63609-tiktok-pribavil-auditoriyu-instagram-poteryal-ekspert-nazval-top-sotssetey-v-belarusi/" target="_blank" rel="noopener">данным AMDG</a> у TikTok самая большая аудитория (ядро 18–34 года), Instagram «стареет» (ядро 25–44), у VK около 1,3 млн пользователей.</li>
+      </ul>
+
+      <h3>Логика площадок для «Медэлит»</h3>
+      <div class="cards compact">
+        <article class="card"><h3>Instagram</h3><p>Доверие и записи. Главная площадка, сюда — основные силы.</p></article>
+        <article class="card"><h3>VK</h3><p>Аккаунт уже есть. Дублировать полезный контент, аудитория постарше.</p></article>
+        <article class="card"><h3>YouTube</h3><p>Длинные объяснения врачей и Shorts из нарезок Reels.</p></article>
+        <article class="card"><h3>TikTok</h3><p>Охват и новая аудитория. Аккаунт не найден — спроси о планах.</p></article>
+      </div>
+
+      <h3>Сегменты аудитории</h3>
+      <ul>
+        <li><b>Женщины 25–45:</b> гинекология, гинекологическая эндокринология, УЗИ, маммология.</li>
+        <li><b>Родители:</b> детские аллергология, ЛОР, кардиология, УЗИ, анализы.</li>
+        <li><b>45+:</b> кардиология, неврология, денситометрия, эндокринология.</li>
+        <li><b>Работающие:</b> приём по будням с 7:00 и в воскресенье, анализы «Инвитро» в одном месте.</li>
+      </ul>
+
+      <h3>Статьи про контент для клиник</h3>
+      <p class="muted">Все российские — юридическую часть оттуда не переноси.</p>
+      <ul>
+        <li><a href="https://www.sostav.ru/blogs/275100/72732" target="_blank" rel="noopener">Контент-план медцентра, 40+ тем</a> — банк тем. Совет публиковать отзывы в рекламе для Беларуси не подходит.</li>
+        <li><a href="https://tck-b.ru/blog/smm/content-plan-clinic" target="_blank" rel="noopener">Матрица из 12 рубрик и «1 идея — 5 форматов»</a>.</li>
+        <li>Кейсы: <a href="https://t4ka.ru/prodvizhenie-medicinskih-uslug/tpost/8ojzclceb1-keis-prodvizheniya-mnogoprofilnogo-medit" target="_blank" rel="noopener">многопрофильный центр</a> и <a href="https://workspace.ru/cases/my-pomenyali-kontent-strategiyu-dlya-medicinskogo-centra-i-uvelichili-ohvaty-na-60/" target="_blank" rel="noopener">«Генезис»</a>.</li>
+      </ul>
+    </section>
+
+    <!-- ============ КОНТЕНТ ============ -->
+    <section id="kontent" class="section">
+      <h2>Контент для «Медэлит»</h2>
+
+      <h3>Рубрикатор</h3>
+      <div class="rubrics">
+        <div><b>УЗИ без тайн</b><span>как подготовиться, что видит врач, сколько длится</span><em>охват</em></div>
+        <div><b>Врач отвечает</b><span>вопросы из директа, эксперты — кандидаты наук и врачи высшей категории</span><em>доверие</em></div>
+        <div><b>Как проходит</b><span>денситометрия, холтер, приём гинеколога, удаление новообразований</span><em>доверие</em></div>
+        <div><b>Родителям</b><span>детский ЛОР, аллерголог, УЗИ — что взять с собой</span><em>доверие</em></div>
+        <div><b>Сервис</b><span>с 7:00 по будням, воскресенье, анализы «Инвитро», страхование</span><em>запись</em></div>
+        <div><b>Календарь здоровья</b><span>«Розовый октябрь», дни остеопороза, инсульта, диабета</span><em>охват</em></div>
+        <div><b>Команда</b><span>закулисье, знакомство с врачами — с согласия</span><em>доверие</em></div>
+        <div><b>Акции</b><span>в минимальном формате и с пометкой</span><em>запись</em></div>
+      </div>
+      <p class="muted">Медицинские факты в любом посте пишет или проверяет врач. Твоя задача — форма, понятность и соответствие закону.</p>
+
+      <h3>Календарь на ближайшие недели</h3>
+      <ol class="timeline">
+        <li><time>весь октябрь</time><b>«Розовый октябрь»</b><span>маммолог, УЗИ молочных желёз — без запугивания</span></li>
+        <li><time><a href="https://www.who.int/campaigns/world-mental-health-day/2026" target="_blank" rel="noopener">10 октября</a></time><b>День психического здоровья</b><span>слабая привязка: психотерапевта в «Медэлит» нет</span></li>
+        <li><time><a href="https://www.worldosteoporosisday.org/node" target="_blank" rel="noopener">20 октября</a></time><b>День борьбы с остеопорозом</b><span>денситометрия, эндокринолог, ревматолог</span></li>
+        <li><time><a href="https://www.world-stroke.org/world-stroke-day-campaign/world-stroke-day-2026" target="_blank" rel="noopener">29 октября</a></time><b>День борьбы с инсультом</b><span>невролог, кардиолог, функциональная диагностика</span></li>
+        <li><time><a href="https://www.who.int/campaigns/world-diabetes-day/2026" target="_blank" rel="noopener">14 ноября</a></time><b>День диабета</b><span>эндокринолог, анализы</span></li>
+        <li><time>сезон</time><b>Осень и простуды</b><span>ЛОР взрослым и детям</span></li>
+      </ol>
+
+      <h3>Три сценария Reels</h3>
+      <div class="scripts">
+        <article class="script">
+          <h4>«Денситометрия: что это и кому её назначает врач»</h4>
+          <p class="when">к 20 октября</p>
+          <ol>
+            <li><b>Хук, 0–2 с:</b> врач в кадре: «Есть исследование, которое показывает плотность костей. Рассказываю, что это».</li>
+            <li><b>Середина:</b> что измеряют, как проходит исследование (кадры кабинета без пациентов), кому его обычно назначают — словами врача.</li>
+            <li><b>Финал:</b> «Исследование назначает врач. „Медэлит“, Большая Троицкая, 40А, +375 29 566 80 80. Информация носит рекламный характер».</li>
+          </ol>
+        </article>
+        <article class="script">
+          <h4>«7:00 в „Медэлит“»</h4>
+          <p class="when">сервисный ролик, в любое время</p>
+          <ol>
+            <li><b>Хук:</b> часы на 6:55, включается свет на ресепшене: «Мы открываемся раньше, чем начинается твой рабочий день».</li>
+            <li><b>Середина:</b> быстрые кадры — администратор, кабинеты, лаборатория — с текстом «Пн–Пт 7–21, Сб 8–18, Вс 8–16».</li>
+            <li><b>Финал:</b> «Запись по телефону +375 29 566 80 80».</li>
+          </ol>
+        </article>
+        <article class="script">
+          <h4>«Маммолог отвечает на 3 частых вопроса»</h4>
+          <p class="when">«Розовый октябрь»</p>
+          <ol>
+            <li><b>Хук:</b> текст на экране: «3 вопроса, которые чаще всего задают маммологу».</li>
+            <li><b>Середина:</b> три коротких ответа врача, вопросы — из реального директа.</li>
+            <li><b>Финал:</b> «Обследование назначает врач. Запись — +375 29 566 80 80».</li>
+          </ol>
+        </article>
+      </div>
+
+      <h3 id="akciya-post">Пост об акции в минимальном формате</h3>
+      <p>Только то, что разрешено без согласования: название услуги, цена, адрес, контакты, логотип и обязательная пометка.</p>
+      <div class="template">
+        <p id="tpl-promo">Удаление папиллом до 0,5 см — 6,50 руб. вместо 13,00 руб. за 1 элемент. Консультация специалиста оплачивается отдельно.<br>Медицинский центр «Медэлит», Гродно, ул. Большая Троицкая, 40А.<br>+375 29 566 80 80 · medelit.by<br>Информация носит рекламный характер.</p>
+        <button class="copy-btn" data-copy="tpl-promo">Скопировать</button>
+      </div>
+      <p class="muted">Это трактовка исключения из ст. 15 п. 1. На встрече лучше спросить, как такие посты оформляют в клинике сейчас.</p>
+
+      <h3>Неделя контента — готовый пример</h3>
+      <ul class="week">
+        <li><b>Пн</b> Reels «Маммолог отвечает на 3 частых вопроса» — «Розовый октябрь».</li>
+        <li><b>Ср</b> Карусель «Как подготовиться к УЗИ» — текст проверяет врач.</li>
+        <li><b>Пт</b> Пост «Сервис»: часы работы, воскресный приём, анализы «Инвитро».</li>
+        <li><b>Сб</b> Пост об акции в минимальном формате.</li>
+        <li><b>Каждый день</b> Сторис: опрос «О чём спросить врача?», закулисье, ответы на вопросы.</li>
+      </ul>
+    </section>
+
+    <!-- ============ АЛГОРИТМЫ ============ -->
+    <section id="algoritmy" class="section">
+      <h2>Алгоритмы и метрики</h2>
+      <h3>Instagram</h3>
+      <ul>
+        <li><a href="https://about.instagram.com/blog/announcements/instagram-ranking-explained" target="_blank" rel="noopener">Официальное объяснение от главы Instagram Адама Моссери</a>: у ленты, Stories и Reels свои алгоритмы. Reels с водяными знаками, рамками или перегруженные текстом показываются хуже. Контент про лекарственные препараты Instagram не рекомендует.</li>
+        <li><a href="https://www.socialmediatoday.com/news/instagram-shares-algorithm-insights-2025/738034/" target="_blank" rel="noopener">Январь 2025</a>: три главных сигнала — время просмотра, доля лайков от охвата и доля пересылок от охвата.</li>
+        <li><a href="https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/" target="_blank" rel="noopener">Декабрь 2025</a>: не больше 5 хэштегов на пост.</li>
+        <li><a href="https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/" target="_blank" rel="noopener">Апрель 2026</a>: аккаунты, которые в основном репостят чужое, выпадают из рекомендаций. Снимать своё важнее, чем репостить.</li>
+      </ul>
+      <h3>Правила площадок</h3>
+      <ul>
+        <li><a href="https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes" target="_blank" rel="noopener">Meta</a> запрещает рекламу в духе «У вас диабет?», но разрешает «Доступно новое лечение диабета».</li>
+        <li><a href="https://www.tiktok.com/community-guidelines/en/integrity-authenticity" target="_blank" rel="noopener">TikTok</a> удаляет медицинскую дезинформацию или убирает её из рекомендаций. Для старта — бесплатная <a href="https://www.tiktok.com/creator-academy/" target="_blank" rel="noopener">Creator Academy</a>.</li>
+      </ul>
+      <h3>Метрики</h3>
+      <ul>
+        <li><a href="https://livedune.com/ru/blog/chto_takoe_engagement_rate_i_kak_schitaetsya_na_livedune/" target="_blank" rel="noopener">ER и ERR</a> — вовлечённость от числа подписчиков и от охвата.</li>
+        <li>Для клиники важнее лайков: сохранения, пересылки, досмотры, сообщения в директ и главное — записи: звонки, переходы на сайт с UTM-метками.</li>
+        <li>Идея: попросить колл-центр спрашивать «Откуда вы о нас узнали?» — так видно, сколько записей дают соцсети.</li>
+      </ul>
+      <h3>Инструменты</h3>
+      <p class="tags"><span>статистика Instagram</span><span>Meta Business Suite</span><span><a href="https://popsters.ru/" target="_blank" rel="noopener">Popsters</a></span><span><a href="https://livedune.com/ru/blog" target="_blank" rel="noopener">LiveDune</a></span><span><a href="https://tgstat.ru/" target="_blank" rel="noopener">TGStat</a></span><span>Canva</span><span>CapCut</span><span><a href="https://glvrd.ru/" target="_blank" rel="noopener">Главред</a></span></p>
+    </section>
+
+    <!-- ============ ВОПРОСЫ ============ -->
+    <section id="voprosy" class="section">
+      <h2>Вопросы и ответы</h2>
+      <p>К каждому — ответ в 3–4 предложения. Нажми на вопрос, чтобы раскрыть подсказку.</p>
+      <div class="qa-tools">
+        <button class="btn-ghost" id="qa-open">Раскрыть все</button>
+        <button class="btn-ghost" id="qa-close">Свернуть все</button>
+      </div>
+
+      <details class="qa">
+        <summary>Почему SMM и почему медицина?</summary>
+        <p>Свяжи личную мотивацию с пользой: медицинский контент помогает людям вовремя дойти до врача и не бояться обследований. Добавь, что тебя привлекает работа с экспертами и ответственность за точность.</p>
+      </details>
+      <details class="qa">
+        <summary>Что скажешь о нашем Instagram?</summary>
+        <p>Три сильные стороны и три идеи роста из вечернего разбора. Тон — «предлагаю», а не «у вас плохо». Хорошие идеи: рубрика «Врач отвечает» с кандидатами наук, сервисные ролики про 7:00 и воскресенье, ответы на отзывы в Google.</p>
+      </details>
+      <details class="qa">
+        <summary>Как снимешь Reels для клиники?</summary>
+        <p>Сценарий с хуком в первые 2 секунды, вертикаль, свет от окна, петличка, субтитры в CapCut, обложка в Canva, без водяных знаков. Покажи свой пример с телефона.</p>
+      </details>
+      <details class="qa">
+        <summary>Составь контент-план на месяц</summary>
+        <p>Цели (охват, доверие, запись) → сегменты → рубрики → частота (например, 3–4 поста или Reels в неделю плюс ежедневные сторис) → кто проверяет медицинскую точность → метрики. Опорные даты — из календаря выше.</p>
+      </details>
+      <details class="qa">
+        <summary>Врачам некогда сниматься. Что будешь делать?</summary>
+        <ul>
+          <li>Снимать пачкой: 5–6 коротких роликов за 40 минут раз в две недели.</li>
+          <li>Присылать вопросы заранее, брать темы из директа.</li>
+          <li>Подстраиваться под окна в расписании врача.</li>
+          <li>Текст всегда утверждает сам врач.</li>
+        </ul>
+      </details>
+      <details class="qa">
+        <summary>Негатив в комментариях или отзыв на 1 звезду в Google</summary>
+        <p>Отвечать быстро и вежливо, без медицинских деталей и без подтверждения визита, переводить на телефон или в личку. Критику не удалять — только оскорбления и спам. Упомяни <a href="https://myfin.by/article/zhizn/diagnoz-stal-publicnym-posle-otzyva-o-klinike-istoria-beloruski-41084" target="_blank" rel="noopener">кейс с диагнозом в ответе на отзыв</a> и <a href="#dannye">шаблон ответа</a>.</p>
+      </details>
+      <details class="qa">
+        <summary>Что нельзя публиковать клинике?</summary>
+        <p>Гарантии, сравнения, благодарности за излечение и «до/после» в рекламе, запугивание, «срочно запишись», обращение к детям, внушение болезни. Пометка «рекламный характер» в рекламе обязательна. Данные пациентов — только с согласия. Это твой главный козырь — расскажи уверенно.</p>
+      </details>
+      <details class="qa">
+        <summary>Почему упал охват?</summary>
+        <p>Проверю первые 2–3 секунды ролика, формат, тему, время публикации, сезонность, водяные знаки, обновления алгоритма. Сравню с лучшими постами и поменяю одну переменную за раз.</p>
+      </details>
+      <details class="qa">
+        <summary>Предложи идеи на ближайшие недели</summary>
+        <p>«Розовый октябрь» с маммологом, денситометрия к 20 октября, невролог и кардиолог к 29 октября, эндокринолог к 14 ноября, акция на удаление папиллом в минимальном формате.</p>
+      </details>
+      <details class="qa">
+        <summary>Что сделаешь за первые 30, 60 и 90 дней?</summary>
+        <ul>
+          <li><b>30 дней:</b> аудит аккаунтов, договорённости о согласовании с руководством и врачами, банк тем, первые регулярные публикации.</li>
+          <li><b>60 дней:</b> рубрикатор, регулярные съёмки с врачами, шаблоны в Canva, работа с отзывами.</li>
+          <li><b>90 дней:</b> выводы по метрикам и записям, решение по TikTok и YouTube Shorts.</li>
+        </ul>
+      </details>
+      <details class="qa">
+        <summary>Какие у тебя ожидания по зарплате?</summary>
+        <p>В вакансии — от 1300 BYN, это выше рынка Гродно для позиции без опыта. Назови сумму не ниже указанной в вакансии и уточни, от чего зависит рост.</p>
+      </details>
+    </section>
+
+    <!-- ============ СПРОСИТЬ ============ -->
+    <section id="sprosit" class="section">
+      <h2>Что спросить у компании</h2>
+      <ul class="check">
+        <li>Какие площадки в зоне ответственности: Instagram, VK, YouTube? Есть ли планы на TikTok?</li>
+        <li>Как устроено согласование рекламы с Минздравом и кто проверяет медицинскую точность постов?</li>
+        <li>Кто снимает: только я на телефон или есть фотограф или видеограф? Какая техника есть?</li>
+        <li>Запускаете ли таргет и кто им занимается? Есть ли бюджет на блогеров?</li>
+        <li>Как поймём, что соцсети работают: записи, звонки, вопрос колл-центра «откуда узнали»?</li>
+        <li>Входят ли в работу ответы на отзывы на картах и в Google?</li>
+        <li>Работаете ли с пациентами из Польши и Литвы?</li>
+        <li>Формат работы, испытательный срок и что важно сделать за первый месяц?</li>
+      </ul>
+    </section>
+
+    <!-- ============ ТЕСТОВОЕ ============ -->
+    <section id="testovoe" class="section">
+      <h2>Тестовое задание</h2>
+      <p>Для позиции без опыта тестовое вероятно: контент-план на неделю или месяц, несколько постов, сценарий Reels. <a href="https://d-pub.ru/articles/testovoe-zadanie-dlya-smm-specialista" target="_blank" rel="noopener">Разбор, как его сдавать</a>: краткое резюме, логика, сам контент, метрики и допущения.</p>
+      <h3>Каркас, который можно взять</h3>
+      <ol>
+        <li>Цель и аудитория: 2–3 сегмента из раздела <a href="#ploshchadki">«Площадки»</a>.</li>
+        <li>Рубрики с целями: охват, доверие, запись.</li>
+        <li>План по дням с форматом (Reels, карусель, сторис) — как в <a href="#kontent">примере недели</a>.</li>
+        <li>2–3 готовых текста и один сценарий Reels.</li>
+        <li>Проверка по закону: пометка, без гарантий и сравнений, кто из врачей проверяет.</li>
+        <li>Метрики и как их считать.</li>
+      </ol>
+      <p>Заранее уточни срок, формат и будет ли обратная связь.</p>
+    </section>
+
+    <!-- ============ НЕ ПРОВЕРЕНО ============ -->
+    <section id="ne-provereno" class="section">
+      <h2>Что не удалось проверить</h2>
+      <ul class="cross">
+        <li>Содержимое Instagram и VK «Медэлит» — без входа они не открываются, разбор остаётся за тобой.</li>
+        <li>Есть ли у клиники TikTok или Telegram-канал.</li>
+        <li>Полный текст вакансии: виден только начальный фрагмент через агрегатор, оригинал на rabota.by найти не удалось.</li>
+        <li>Разделы сайта «Новости» и «Программы» — их содержимое подгружается скриптом и не прочиталось.</li>
+        <li>Считается ли аккаунт в соцсети «собственным сайтом» для исключения из согласования: официального разъяснения МАРТ нет, вывод — трактовка по тексту закона.</li>
+        <li>Работает ли «Медэлит» с иностранными пациентами.</li>
+      </ul>
+    </section>
+
+    <!-- ============ ИСТОЧНИКИ ============ -->
+    <section id="istochniki" class="section">
+      <h2>Все источники</h2>
+      <div class="sources">
+        <div>
+          <h3>«Медэлит»</h3>
+          <ul>
+            <li><a href="https://medelit.by/" target="_blank" rel="noopener">medelit.by</a></li>
+            <li><a href="https://medelit.by/o-nas" target="_blank" rel="noopener">О нас</a></li>
+            <li><a href="https://medelit.by/promotions/skidka-50-na-udalenie-novoobrazovanij-v-medelit" target="_blank" rel="noopener">Акция −50%</a></li>
+            <li><a href="https://www.instagram.com/medelit_grodno/" target="_blank" rel="noopener">Instagram</a> · <a href="https://vk.com/medelitgrodno" target="_blank" rel="noopener">VK</a> · <a href="https://www.youtube.com/channel/UCsQl8iFSGzH4QWZoYEbnmRg" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://yandex.by/maps/-/CHHcECOq" target="_blank" rel="noopener">Яндекс Карты</a> · <a href="https://medelit.103.by/otzyvy/" target="_blank" rel="noopener">103.by</a> · <a href="https://medelit.relax.by/" target="_blank" rel="noopener">relax.by</a></li>
+            <li><a href="https://dreamjob.ru/employers/457240/vakansii" target="_blank" rel="noopener">Вакансии на Dream Job</a> · <a href="https://by.joblum.com/company/medelit" target="_blank" rel="noopener">Joblum</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Конкуренты и рынок</h3>
+          <ul>
+            <li><a href="https://lode-grodno-3.103.by/" target="_blank" rel="noopener">ЛОДЭ Гродно</a></li>
+            <li><a href="https://myclinic.by/" target="_blank" rel="noopener">«Моя клиника»</a></li>
+            <li><a href="https://rosmed.103.by/" target="_blank" rel="noopener">«Росмед»</a></li>
+            <li><a href="https://doctorplus.103.by/rubric/uzi/" target="_blank" rel="noopener">«Доктор Плюс»</a></li>
+            <li><a href="https://grodno.rabota.by/vacancy/136584482" target="_blank" rel="noopener">Вакансия SMM «Моей клиники»</a></li>
+            <li><a href="https://grodno.rabota.by/vacancy/136312930" target="_blank" rel="noopener">Вакансия контент-креатора КиберКод</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Законы и регуляторы</h3>
+          <ul>
+            <li><a href="https://etalonline.by/document/?regnum=h10700225" target="_blank" rel="noopener">Закон «О рекламе» № 225-З</a> · <a href="https://zakony-by.com/zakon_rb_o_reklame/15.htm" target="_blank" rel="noopener">ст. 15</a></li>
+            <li><a href="https://base3.spinform.ru/show_doc.fwx?rgn=97673" target="_blank" rel="noopener">Постановление Минздрава № 63</a></li>
+            <li><a href="http://rceth.by/Documents/regl2024.pdf" target="_blank" rel="noopener">Регламент согласования рекламы</a></li>
+            <li><a href="https://www.mart.gov.by/news/novost/osnovnye-novshestva-v-sfere-reklamy-chto-nuzhno-znat-uchastnikam-rynka/" target="_blank" rel="noopener">МАРТ: реестр распространителей</a> · <a href="https://t.me/advertising_by_MART" target="_blank" rel="noopener">@advertising_by_MART</a></li>
+            <li><a href="https://etalonline.by/document/?regnum=H12100099" target="_blank" rel="noopener">Закон № 99-З о персональных данных</a></li>
+            <li><a href="https://zakony-by.com/zakon_rb_o_zdravoohranenii/46.htm" target="_blank" rel="noopener">Врачебная тайна, ст. 46</a></li>
+            <li><a href="https://etalonline.by/document/?regnum=u02601103" target="_blank" rel="noopener">НЦЗПД о съёмке в медучреждениях</a></li>
+            <li><a href="https://myfin.by/article/zhizn/diagnoz-stal-publicnym-posle-otzyva-o-klinike-istoria-beloruski-41084" target="_blank" rel="noopener">Кейс с диагнозом в ответе на отзыв</a></li>
+            <li><a href="https://ukon.by/2020/07/14/zakonno-li-ispolzovat-foto-pacienta-v-reklame/" target="_blank" rel="noopener">Фото пациента в рекламе</a></li>
+            <li><a href="https://president.gov.by/ru/events/po-reseniu-prezidenta-bezvizovyj-rezim-v-ezda-v-stranu-dla-grazhdan-38-evropejskih-gosudarstv-prodlen-na-2026-god" target="_blank" rel="noopener">Безвиз до конца 2026</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Площадки и аналитика</h3>
+          <ul>
+            <li><a href="https://about.instagram.com/blog/announcements/instagram-ranking-explained" target="_blank" rel="noopener">Instagram Ranking Explained</a></li>
+            <li><a href="https://www.socialmediatoday.com/news/instagram-shares-algorithm-insights-2025/738034/" target="_blank" rel="noopener">Сигналы Instagram, 2025</a></li>
+            <li><a href="https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/" target="_blank" rel="noopener">Лимит хэштегов</a></li>
+            <li><a href="https://techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown/" target="_blank" rel="noopener">Ограничения для агрегаторов</a></li>
+            <li><a href="https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes" target="_blank" rel="noopener">Meta: личные характеристики</a></li>
+            <li><a href="https://www.tiktok.com/community-guidelines/en/integrity-authenticity" target="_blank" rel="noopener">TikTok: правила</a> · <a href="https://www.tiktok.com/creator-academy/" target="_blank" rel="noopener">Creator Academy</a></li>
+            <li><a href="https://datareportal.com/reports/digital-2026-belarus" target="_blank" rel="noopener">DataReportal 2026: Беларусь</a></li>
+            <li><a href="https://officelife.by/news/63609-tiktok-pribavil-auditoriyu-instagram-poteryal-ekspert-nazval-top-sotssetey-v-belarusi/" target="_blank" rel="noopener">AMDG: соцсети в Беларуси</a></li>
+            <li><a href="https://livedune.com/ru/blog/chto_takoe_engagement_rate_i_kak_schitaetsya_na_livedune/" target="_blank" rel="noopener">ER и ERR</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Контент и тестовое</h3>
+          <ul>
+            <li><a href="https://www.sostav.ru/blogs/275100/72732" target="_blank" rel="noopener">Контент-план медцентра</a></li>
+            <li><a href="https://tck-b.ru/blog/smm/content-plan-clinic" target="_blank" rel="noopener">Матрица рубрик</a></li>
+            <li><a href="https://t4ka.ru/prodvizhenie-medicinskih-uslug/tpost/8ojzclceb1-keis-prodvizheniya-mnogoprofilnogo-medit" target="_blank" rel="noopener">Кейс многопрофильного центра</a></li>
+            <li><a href="https://workspace.ru/cases/my-pomenyali-kontent-strategiyu-dlya-medicinskogo-centra-i-uvelichili-ohvaty-na-60/" target="_blank" rel="noopener">Кейс «Генезис»</a></li>
+            <li><a href="https://d-pub.ru/articles/testovoe-zadanie-dlya-smm-specialista" target="_blank" rel="noopener">Как сдавать тестовое</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Календарь здоровья</h3>
+          <ul>
+            <li><a href="https://www.who.int/campaigns/world-mental-health-day/2026" target="_blank" rel="noopener">10 октября — психическое здоровье</a></li>
+            <li><a href="https://www.worldosteoporosisday.org/node" target="_blank" rel="noopener">20 октября — остеопороз</a></li>
+            <li><a href="https://www.world-stroke.org/world-stroke-day-campaign/world-stroke-day-2026" target="_blank" rel="noopener">29 октября — инсульт</a></li>
+            <li><a href="https://www.who.int/campaigns/world-diabetes-day/2026" target="_blank" rel="noopener">14 ноября — диабет</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Собрано 7 октября 2026 для личной подготовки к собеседованию. Не является юридической консультацией.</p>
+    </footer>
+  </main>
+
+  <button class="to-top" id="to-top" aria-label="Наверх" hidden>
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
