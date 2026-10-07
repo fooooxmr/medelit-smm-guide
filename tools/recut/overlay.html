@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-Medium.ttf"); font-weight: 500; }
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-SemiBold.ttf"); font-weight: 600; }
+@font-face { font-family: Inter; src: url("file:///usr/share/fonts/truetype/macos/Inter-Bold.ttf"); font-weight: 700; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
+* { box-sizing: border-box; }
+body { font-family: Inter, sans-serif; -webkit-font-smoothing: antialiased; color: #fff; }
+.el { position: absolute; opacity: 0; will-change: transform, opacity; }
+
+#head { left: 56px; right: 56px; top: 196px; }
+#head .pill { display: inline-block; max-width: 100%; background: rgba(0,130,56,.95); border-radius: 30px; padding: 20px 28px 22px;
+  box-shadow: 0 14px 40px rgba(0,0,0,.22); }
+#head .tag { display: inline-block; margin: 0 0 10px; font-size: 25px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: #0b3d22; background: #fff; border-radius: 999px; padding: 6px 14px 5px; }
+#head .title { margin: 0; font-size: 56px; line-height: 1.08; font-weight: 700; letter-spacing: -.02em; text-wrap: balance; }
+#head .big { margin: 0; font-size: 92px; line-height: .9; font-weight: 700; letter-spacing: -.05em; }
+#head .sub { margin: 6px 0 0; font-size: 30px; line-height: 1.16; font-weight: 600; text-wrap: balance; }
+#head .legal { margin: 12px 0 0; font-size: 21px; font-weight: 600; color: rgba(255,255,255,.82); }
+
+#name { left: 56px; }
+#name .card { display: inline-block; background: rgba(255,255,255,.97); color: #13261d; border-radius: 26px; padding: 18px 26px 18px 22px;
+  border-left: 10px solid #008238; box-shadow: 0 14px 40px rgba(0,0,0,.25); }
+#name .role { margin: 0 0 4px; font-size: 25px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #008238; }
+#name .who { margin: 0; font-size: 40px; font-weight: 700; letter-spacing: -.01em; }
+
+#end { left: 56px; right: 56px; top: 330px; }
+#end .card { background: #fff; color: #13261d; border-radius: 40px; padding: 40px 42px 42px; box-shadow: 0 30px 80px rgba(0,0,0,.35); }
+#end .logo { display: block; height: 66px; margin: 0 0 30px; }
+#end .eye { margin: 0 0 12px; font-size: 26px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #e97b1c; }
+#end .t { margin: 0; font-size: 62px; line-height: 1.06; font-weight: 700; letter-spacing: -.025em; text-wrap: balance; }
+#end .s { margin: 18px 0 0; font-size: 34px; line-height: 1.3; font-weight: 500; color: #3a4d43; text-wrap: pretty; }
+#end .contact { margin: 30px 0 0; padding: 26px 30px; background: #008238; color: #fff; border-radius: 28px; }
+#end .contact b { display: block; font-size: 52px; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+#end .contact span { display: block; margin-top: 8px; font-size: 29px; font-weight: 500; line-height: 1.35; opacity: .95; }
+#end .legal2 { margin: 22px 0 0; font-size: 24px; font-weight: 600; color: #5b6b62; }
+</style>
+</head>
+<body>
+<div id="head" class="el"></div>
+<div id="name" class="el"><div class="card"><p class="role"></p><p class="who"></p></div></div>
+<div id="end" class="el"></div>
+<script>
+function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
+function ease(t) { t = clamp(t, 0, 1); return 1 - Math.pow(1 - t, 3); }
+function back(t) { t = clamp(t, 0, 1); const c = 1.6; return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); }
+
+function setup(cfg) {
+  window.CFG = cfg;
+  const h = document.getElementById("head");
+  h.innerHTML = '<div class="pill">' + (cfg.tag ? '<span class="tag">' + cfg.tag + '</span>' : '') +
+    (cfg.big ? '<p class="big">' + cfg.big + '</p><p class="sub">' + cfg.title + '</p>' : '<p class="title">' + cfg.title + '</p>') + '<p class="legal">Информация носит рекламный характер</p></div>';
+  const n = document.getElementById("name");
+  n.querySelector(".role").textContent = cfg.name.role;
+  n.querySelector(".who").textContent = cfg.name.who;
+  n.style.top = cfg.name.top + "px";
+  const e = cfg.endcard;
+  document.getElementById("end").innerHTML = '<div class="card"><img class="logo" src="../medelit-logo.png" alt="">' +
+    '<p class="eye">' + e.eye + '</p><p class="t">' + e.title + '</p>' + (e.sub ? '<p class="s">' + e.sub + '</p>' : '') +
+    '<div class="contact"><b>+375 29 566 80 80</b><span>Онлайн-запись — medelit.by<br>Гродно, ул. Большая Троицкая, 40А</span></div>' +
+    '<p class="legal2">Информация носит рекламный характер</p></div>';
+}
+
+function win(el, t, a, b, dy) {
+  if (t < a || t >= b) { el.style.opacity = "0"; return; }
+  const i = ease((t - a) / 0.32), o = (b - t) < 0.22 ? ease((b - t) / 0.22) : 1;
+  el.style.opacity = String(i * o);
+  el.style.transform = "translateY(" + ((1 - i) * (dy || -24)) + "px) scale(" + (0.94 + 0.06 * back((t - a) / 0.4)) + ")";
+}
+
+function seek(t) {
+  const c = window.CFG;
+  const head = document.getElementById("head");
+  win(head, t, -1, c.endAt, -30);
+  win(document.getElementById("name"), t, c.name.a, c.name.b, 24);
+  win(document.getElementById("end"), t, c.endAt, 1e9, 40);
+}
+window.setup = setup;
+window.seek = seek;
+</script>
+</body>
+</html>
